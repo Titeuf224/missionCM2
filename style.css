@@ -2281,3 +2281,11 @@ dialog h2 {
 .activity-diagram { margin: 0 0 25px; padding: 10px; background: #f4f7ed; border-radius: 16px; text-align: center; }
 .activity-diagram svg { width: min(100%, 400px); max-height: 220px; font: 17px 'Trebuchet MS', Arial, sans-serif; fill: #315e45; }
 .progress-label strong { overflow-wrap: anywhere; }
+
+/* Choix de classe commun aux deux parcours. */
+.class-picker { display:flex; align-items:center; gap:6px; padding:5px; border-radius:16px; background:#edf3ed; }
+.class-picker > span { font-size:.8rem; padding:0 5px; color:#385a4c; }
+.class-picker a { padding:8px 12px; border-radius:12px; font-weight:800; color:#145747; text-decoration:none; }
+.class-picker a[aria-current="page"] { color:white; background:#145747; }
+.class-picker a:focus-visible { outline:3px solid #d88a35; outline-offset:2px; }
+@media(max-width:760px) { .topbar { flex-wrap:wrap; gap:10px; } .class-picker { margin-left:auto; } .header-right { flex-wrap:wrap; justify-content:center; } }
